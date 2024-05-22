@@ -6,6 +6,7 @@ const AppRoutes = () => {
   console.log(ROUTES.mainpage)
   return (
     <Routes>
+      <Route path={ROUTES.homepage} element={<MainPage />} />
       <Route path={ROUTES.mainpage} element={<MainPage />} />
       <Route path={ROUTES.weather} element={<WeatherPage />} />
     </Routes>

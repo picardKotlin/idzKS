@@ -32,8 +32,8 @@ dd {
 
 /* Выставляем основные настройки по-умолчанию для body */
 body {
-  background-color: #282c34;
-  color: #fff;
+  background-color: #0057b8;
+  color: #ffd700;
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
@@ -108,7 +108,7 @@ select {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #ffd700;
 }
 
 @keyframes App-logo-spin {
@@ -124,9 +124,8 @@ a {
   width: 60%;
 }
 
-.header_navigation ul {
-  display: flex;
-  justify-content: space-between;
+.header_navigation_link {
+  margin: 0 20px;
 }
 
 .weatherSection {
@@ -137,7 +136,7 @@ a {
   align-items: center;
 }
 .weatherFigure {
-  border: 1px solid #fff;
+  border: 1px solid #ffd700;
   border-radius: 25px;
   padding: 10px;
   margin: 20px;
@@ -156,7 +155,7 @@ a {
   left: 0;
   height: 1px;
   width: 100%;
-  background-color: #fff;
+  background-color: #ffd700;
 }
 
 .weakWeather {
@@ -177,7 +176,7 @@ a {
   right: -1px;
   height: 100%;
   width: 1px;
-  background-color: #fff;
+  background-color: #ffd700;
 }
 
 .weatherIcon,

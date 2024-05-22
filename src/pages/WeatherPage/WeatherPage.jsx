@@ -11,8 +11,8 @@ const WeatherPage = () => {
   const [latitude, longitude, day] = state.split(':').map(coord => parseFloat(coord).toFixed(3));
 
   const currentDay = parseInt(day)
-  const prevDay = currentDay == 0 ? 0 : currentDay - 1;
-  const nextDay = currentDay == 6 ? 6 : currentDay + 1;
+  const prevDay = currentDay === 0 ? 0 : currentDay - 1;
+  const nextDay = currentDay === 6 ? 6 : currentDay + 1;
   error && console.log(error)
 
   const updateWeatherData = () => {
@@ -39,7 +39,7 @@ const WeatherPage = () => {
             <h4>Відчувається: {data.daily.apparent_temperature_min[currentDay]}°</h4>
           </div>
           <div className='todayDayNight'>
-            {data.current.is_day == 1 ? <WiDaySunny/> : <WiNightClear/>}
+            {data.current.is_day === 1 ? <WiDaySunny/> : <WiNightClear/>}
           </div>
           <div className='todayWind'>
             <WiStrongWind/>{data.daily.wind_speed_10m_max[currentDay]} км/год

@@ -1,4 +1,5 @@
 export const ROUTES = {
-  mainpage: '/',
+  homepage: '/',
+  mainpage: '/:state',
   weather: '/weather/:state'
 };
